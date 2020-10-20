@@ -214,10 +214,6 @@ namespace scidb {
             }
         }
 
-        /**
-         * getMaxScore()
-         * aggregate 종류에 따라 현재 partition에서 가질 수 있는 최대 score를 반환하는 함수
-         */
         double getMaxScore(int aggregateType,double representative,int windowSize,bool maxDensityOpt,double maxDensity){
             switch(aggregateType){
                 case 0: {//sum
